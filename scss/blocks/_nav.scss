@@ -1,0 +1,34 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 249px;
+    align-items: center;
+
+    .nav__list{
+        @include reset-list;
+        display: flex;
+        gap: 32px;
+
+        .nav__list-item{
+
+            .nav__link{
+                @include a-style;
+                
+                &:hover{
+                    color: #FCB72B;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    
+    .nav .nav__list{
+        display: inline-block;
+        padding: 41px 120px 87px;
+        .nav__list-item{
+            text-align: center;
+        }
+    }
+}

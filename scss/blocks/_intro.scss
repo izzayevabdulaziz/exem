@@ -1,0 +1,164 @@
+.site-intro{
+    position: relative;
+    background-image: url(./../../img/main_bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    .site-intro__container{
+        padding-top: 153px;
+        padding-bottom: 152px;
+        .intro-title{
+            width: 500px;
+            h3{
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 56px;
+                color: #fff;
+                letter-spacing: -2.14286px;
+
+                
+            }   
+        }
+
+        .intro-text{
+            max-width: 495px;
+            padding-left: 95px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-family: "Lexend Deca";
+            p{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: #fff;
+            }
+        }
+
+        .intro-button {
+            margin-left: 95px;
+
+            .intro-button__link{
+
+                &:hover{
+                    color: #FCB72B;
+                    background: none;
+                }
+            }
+        }
+
+        &::after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background-image: url(./../../img/intro-arrov.svg);
+            object-fit: contain;
+            width: 203px;
+            height: 16px;
+            background-position: center;
+            top: calc(56%);
+            left: calc(50% - 724px )
+        }
+
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background-image: url(./../../img/intro-arrov1.svg);
+            object-fit: contain;
+            background-repeat: no-repeat;
+            width: 447px;
+            height: 152px;
+            background-position: center;
+            top: calc(56%);
+            left: calc(50% - 18px )
+        }
+    }
+
+}
+
+@media only screen and (max-width: $tablet) {
+    .site-intro{
+        background-image: url(./../../img/Bitmap3.jpg);
+
+
+
+        .site-intro__container{
+            .intro-title{
+                width: 573px;
+                h3{        
+                    text-align: center;
+                    letter-spacing: -2.5px;
+                }   
+            }
+    
+            .intro-text{
+                max-width: 495px;
+                padding-left: 95px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                font-family: "Lexend Deca";
+                p{
+                    text-align: center;
+                }
+            }
+    
+            .intro-button {
+                text-align: center;
+            }
+
+            &::after{
+                display: none;
+            }
+
+            &::before{
+                width: 446px;
+                height: 149px;
+                top: 73%;
+                left: calc(-10% - 50px);
+            }
+        }
+
+    }
+}
+    
+@media only screen and (max-width: $mobile) {
+    .site-intro{
+        background-image: url(./../../img/Bitmap2.jpg);
+
+        .site-intro__container{
+            .intro-title{
+                max-width: 311px;
+                h3{        
+                    text-align: center;
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: -1.78571px;
+                }   
+            }
+
+            .intro-text{
+                max-width: 311px;
+                padding-left: 0px;
+                p{
+                    font-family: 'Lexend Deca';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+
+            &::before{
+                top: 74%;
+                left: calc(-68% - 49px);
+            }
+
+            .intro-button {
+                margin-left: 0; 
+            }
+        }
+    }
+}
